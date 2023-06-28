@@ -7,10 +7,31 @@
 
 import SwiftUI
 
+class State1: ObservableObject {
+
+}
+
+class SuperState: ObservableObject {
+    let state1: State1
+    let state2: State2
+    let state3: State3
+}
+
+
+
 struct Donut: Identifiable {
     var id: UUID = UUID()
     var name: String
     var price: Int
+
+
+    init(
+        name: String = "",
+        price: Int = -1
+    ) {
+        self.name = name
+        self.price = price
+    }
 
     static let donuts = [
         Donut(name: "Клубничный", price: 100),
@@ -25,6 +46,7 @@ struct Donut: Identifiable {
 
 class FoodTruckModelObservableObject: ObservableObject {
     @Published var donuts = Donut.all
+    @Published var name = ""
 
     func addDonut() {
         donuts.append(Donut(name: "Ванильный", price: 200))
@@ -43,11 +65,16 @@ class FoodTruckModelObservableObject: ObservableObject {
             donut.price = Int(Double(donut.price) * 1.2)
             return donut
         }
+    }
+
+    func changeName() {
+        name = String.random()
     }
 }
 
 @Observable class FoodTruckModelObservation {
     var donuts = Donut.all
+    var name = ""
 
     func addDonut() {
         donuts.append(Donut(name: "Ванильный", price: 200))
@@ -66,6 +93,10 @@ class FoodTruckModelObservableObject: ObservableObject {
             donut.price = Int(Double(donut.price) * 1.2)
             return donut
         }
+    }
+
+    func changeName() {
+        name = String.random()
     }
 }
 

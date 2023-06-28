@@ -19,7 +19,7 @@ struct DonutMenuObservableObjectSimple: View {
 
             DonutView(donut: model.donuts[2])
 
-            Button("Повысить цены") {
+            Button("Повысить все цены") {
                 model.increasePrice()
             }
             .background(.debug)
@@ -27,15 +27,21 @@ struct DonutMenuObservableObjectSimple: View {
             Button("Повысить цену клубничного") {
                 model.increasePriceStrawberry()
             }
+
+            Button("Поменять имя") {
+                model.changeName()
+            }
             .background(.debug)
 
             TestText(text: "Some text")
+                .padding()
+                .background(.debug)
 
             localView
                 .padding()
                 .background(.debug)
         }
-        .background(.debug)
+        //.background(.debug)
     }
 
     var localView: some View {

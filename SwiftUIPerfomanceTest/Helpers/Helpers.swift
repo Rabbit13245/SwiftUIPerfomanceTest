@@ -20,3 +20,9 @@ public extension ShapeStyle where Self == Color {
     #endif
     }
 }
+
+public extension String {
+    static func random() -> Self {
+        UUID().uuidString
+    }
+}

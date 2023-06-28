@@ -29,6 +29,11 @@ struct DonutMenuWithObservationSimple: View {
             }
             .background(.debug)
 
+            Button("Поменять имя") {
+                model.changeName()
+            }
+            .background(.debug)
+
             TestText(text: "Some text")
 
             localView

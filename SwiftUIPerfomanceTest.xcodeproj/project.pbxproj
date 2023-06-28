@@ -16,6 +16,10 @@
 		845863812A4C4FAE00C0C571 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845863802A4C4FAE00C0C571 /* MainView.swift */; };
 		845863842A4C51C100C0C571 /* DonutMenuWithObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845863832A4C51C100C0C571 /* DonutMenuWithObservation.swift */; };
 		845863862A4C544600C0C571 /* DonutMenuWithObservationSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845863852A4C544600C0C571 /* DonutMenuWithObservationSimple.swift */; };
+		845863882A4C5FDB00C0C571 /* DonutState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845863872A4C5FDB00C0C571 /* DonutState.swift */; };
+		8458638A2A4C631500C0C571 /* DonutBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845863892A4C631500C0C571 /* DonutBindable.swift */; };
+		8458638C2A4C66CD00C0C571 /* DonutArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458638B2A4C66CD00C0C571 /* DonutArray.swift */; };
+		8458638E2A4C69E000C0C571 /* ObservableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458638D2A4C69E000C0C571 /* ObservableExample.swift */; };
 		84CAD9F12A4C300A00DDAB67 /* SwiftUIPerfomanceTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CAD9F02A4C300A00DDAB67 /* SwiftUIPerfomanceTestApp.swift */; };
 		84CAD9F52A4C300B00DDAB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CAD9F42A4C300B00DDAB67 /* Assets.xcassets */; };
 		84CAD9F82A4C300B00DDAB67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CAD9F72A4C300B00DDAB67 /* Preview Assets.xcassets */; };
@@ -31,6 +35,10 @@
 		845863802A4C4FAE00C0C571 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		845863832A4C51C100C0C571 /* DonutMenuWithObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutMenuWithObservation.swift; sourceTree = "<group>"; };
 		845863852A4C544600C0C571 /* DonutMenuWithObservationSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutMenuWithObservationSimple.swift; sourceTree = "<group>"; };
+		845863872A4C5FDB00C0C571 /* DonutState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutState.swift; sourceTree = "<group>"; };
+		845863892A4C631500C0C571 /* DonutBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutBindable.swift; sourceTree = "<group>"; };
+		8458638B2A4C66CD00C0C571 /* DonutArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutArray.swift; sourceTree = "<group>"; };
+		8458638D2A4C69E000C0C571 /* ObservableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableExample.swift; sourceTree = "<group>"; };
 		84CAD9ED2A4C300A00DDAB67 /* SwiftUIPerfomanceTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPerfomanceTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CAD9F02A4C300A00DDAB67 /* SwiftUIPerfomanceTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPerfomanceTestApp.swift; sourceTree = "<group>"; };
 		84CAD9F42A4C300B00DDAB67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +82,10 @@
 				8458637A2A4C323C00C0C571 /* DonutView.swift */,
 				845863802A4C4FAE00C0C571 /* MainView.swift */,
 				8458637E2A4C4F6300C0C571 /* TestText.swift */,
+				845863872A4C5FDB00C0C571 /* DonutState.swift */,
+				845863892A4C631500C0C571 /* DonutBindable.swift */,
+				8458638B2A4C66CD00C0C571 /* DonutArray.swift */,
+				8458638D2A4C69E000C0C571 /* ObservableExample.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,9 +210,13 @@
 				845863812A4C4FAE00C0C571 /* MainView.swift in Sources */,
 				845863792A4C321300C0C571 /* DonutMenuObservableObject.swift in Sources */,
 				845863752A4C30BA00C0C571 /* Helpers.swift in Sources */,
+				8458638C2A4C66CD00C0C571 /* DonutArray.swift in Sources */,
+				845863882A4C5FDB00C0C571 /* DonutState.swift in Sources */,
+				8458638E2A4C69E000C0C571 /* ObservableExample.swift in Sources */,
 				8458637B2A4C323C00C0C571 /* DonutView.swift in Sources */,
 				84CAD9F12A4C300A00DDAB67 /* SwiftUIPerfomanceTestApp.swift in Sources */,
 				845863842A4C51C100C0C571 /* DonutMenuWithObservation.swift in Sources */,
+				8458638A2A4C631500C0C571 /* DonutBindable.swift in Sources */,
 				8458637D2A4C4F4800C0C571 /* DonutMenuObservableObjectSimple.swift in Sources */,
 				8458637F2A4C4F6300C0C571 /* TestText.swift in Sources */,
 			);

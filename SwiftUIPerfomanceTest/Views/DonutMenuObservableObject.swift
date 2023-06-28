@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DonutMenuWithObservableObject: View {
     @StateObject var model = FoodTruckModelObservableObject()
-    
+
     var body: some View {
         let _ = Self._printChanges()
         VStack(spacing: 16) {
@@ -18,25 +18,30 @@ struct DonutMenuWithObservableObject: View {
                     ForEach(model.donuts) { donut in
                         DonutView(donut: donut)
                     }
-                    
+
                     Button("Добавить новый пончик") {
                         model.addDonut()
                     }
                     .background(.debug)
-                    
-                    Button("Повысить цены") {
+
+                    Button("Повысить все цены") {
                         model.increasePrice()
                     }
                     .background(.debug)
-                    
+
                     Button("Повысить цену клубничного") {
                         model.increasePriceStrawberry()
                     }
                     .background(.debug)
+
+                    Button("Поменять имя") {
+                        model.changeName()
+                    }
+                    .background(.debug)
                 }
-                
+
                 TestText(text: "Some text")
-                
+
                 localView
                     .padding()
                     .background(.debug)
@@ -45,7 +50,7 @@ struct DonutMenuWithObservableObject: View {
         }
         .background(.debug)
     }
-    
+
     var localView: some View {
         TestText(text: "LocalView")
     }

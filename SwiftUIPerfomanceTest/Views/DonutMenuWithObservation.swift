@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct DonutMenuWithObservation: View {
-//    @State var model = FoodTruckModelObservation()
     let model = FoodTruckModelObservation()
 
     var body: some View {
@@ -25,7 +24,7 @@ struct DonutMenuWithObservation: View {
                     }
                     .background(.debug)
 
-                    Button("Повысить цены") {
+                    Button("Повысить все цены") {
                         model.increasePrice()
                     }
                     .background(.debug)
@@ -34,6 +33,12 @@ struct DonutMenuWithObservation: View {
                         model.increasePriceStrawberry()
                     }
                     .background(.debug)
+
+                    Button("Поменять имя") {
+                        model.changeName()
+                    }
+                    .background(.debug)
+
                 }
 
                 TestText(text: "Some text")

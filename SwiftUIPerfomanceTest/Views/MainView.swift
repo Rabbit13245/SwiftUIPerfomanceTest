@@ -43,6 +43,26 @@ struct MainView: View {
                         .navigationTitle("Observation List")
                         .navigationBarTitleDisplayMode(.inline)
                 }
+                NavigationLink("@State") {
+                    DonutState()
+                        .navigationTitle("@State")
+                        .navigationBarTitleDisplayMode(.inline)
+                }
+                NavigationLink("@Bindable") {
+                    DonutBindable()
+                        .navigationTitle("@Bindable")
+                        .navigationBarTitleDisplayMode(.inline)
+                }
+                NavigationLink("DonutArray") {
+                    DonutArray()
+                        .navigationTitle("DonutArray")
+                        .navigationBarTitleDisplayMode(.inline)
+                }
+                NavigationLink("ObservableExample") {
+                    ObservableExample()
+                        .navigationTitle("ObservableExample")
+                        .navigationBarTitleDisplayMode(.inline)
+                }
             }
             .navigationTitle("Examples")
         }
