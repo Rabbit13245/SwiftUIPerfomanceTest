@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct DonutMenuSimple: View {
-    @StateObject var model = FoodTruckModelObservableObject()
+struct DonutMenuWithObservationSimple: View {
+    let model = FoodTruckModelObservation()
 
     var body: some View {
         let _ = Self._printChanges()

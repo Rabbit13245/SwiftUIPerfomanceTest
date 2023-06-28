@@ -52,5 +52,20 @@ class FoodTruckModelObservableObject: ObservableObject {
     func addDonut() {
         donuts.append(Donut(name: "Ванильный", price: 200))
     }
+
+    func increasePrice() {
+        donuts = donuts.map {
+            Donut(name: $0.name, price: Int(Double($0.price) * 1.2))
+        }
+    }
+
+    func increasePriceStrawberry() {
+        donuts = donuts.map { donut in
+            guard donut.name == "Клубничный" else { return donut }
+            var donut = donut
+            donut.price = Int(Double(donut.price) * 1.2)
+            return donut
+        }
+    }
 }
 

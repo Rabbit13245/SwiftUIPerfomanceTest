@@ -12,7 +12,7 @@ struct MainView: View {
         NavigationView {
             List {
                 NavigationLink("ObservableObject simple") {
-                    DonutMenuSimple()
+                    DonutMenuObservableObjectSimple()
                         .navigationTitle("ObservableObject simple")
                         .navigationBarTitleDisplayMode(.inline)
                 }
@@ -21,16 +21,26 @@ struct MainView: View {
                         Spacer().frame(width: 30, height: 30)
                             .background(.debug)
 
-                        DonutMenuSimple()
+                        DonutMenuObservableObjectSimple()
                     }
                     .padding()
                     .background(.debug)
-                    .navigationTitle("ObservableObject simple")
+                    .navigationTitle("ObservableObject simple with outer wrapper VStack")
                     .navigationBarTitleDisplayMode(.inline)
                 }
                 NavigationLink("ObservableObject List") {
                     DonutMenuWithObservableObject()
                         .navigationTitle("ObservableObject List")
+                        .navigationBarTitleDisplayMode(.inline)
+                }
+                NavigationLink("Observation simple") {
+                    DonutMenuWithObservationSimple()
+                        .navigationTitle("Observation List")
+                        .navigationBarTitleDisplayMode(.inline)
+                }
+                NavigationLink("Observation List") {
+                    DonutMenuWithObservation()
+                        .navigationTitle("Observation List")
                         .navigationBarTitleDisplayMode(.inline)
                 }
             }
