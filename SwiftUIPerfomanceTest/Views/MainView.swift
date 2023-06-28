@@ -16,8 +16,20 @@ struct MainView: View {
                         .navigationTitle("ObservableObject simple")
                         .navigationBarTitleDisplayMode(.inline)
                 }
+                NavigationLink("ObservableObject simple with outer wrapper VStack") {
+                    VStack(spacing: 16) {
+                        Spacer().frame(width: 30, height: 30)
+                            .background(.debug)
+
+                        DonutMenuSimple()
+                    }
+                    .padding()
+                    .background(.debug)
+                    .navigationTitle("ObservableObject simple")
+                    .navigationBarTitleDisplayMode(.inline)
+                }
                 NavigationLink("ObservableObject List") {
-                    DonutMenuObservableObject()
+                    DonutMenuWithObservableObject()
                         .navigationTitle("ObservableObject List")
                         .navigationBarTitleDisplayMode(.inline)
                 }
