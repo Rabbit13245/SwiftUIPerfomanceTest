@@ -11,6 +11,9 @@
 		845863772A4C30DC00C0C571 /* Donut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845863762A4C30DC00C0C571 /* Donut.swift */; };
 		845863792A4C321300C0C571 /* DonutMenuObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845863782A4C321300C0C571 /* DonutMenuObservableObject.swift */; };
 		8458637B2A4C323C00C0C571 /* DonutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458637A2A4C323C00C0C571 /* DonutView.swift */; };
+		8458637D2A4C4F4800C0C571 /* DonutMenuSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458637C2A4C4F4800C0C571 /* DonutMenuSimple.swift */; };
+		8458637F2A4C4F6300C0C571 /* TestText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458637E2A4C4F6300C0C571 /* TestText.swift */; };
+		845863812A4C4FAE00C0C571 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845863802A4C4FAE00C0C571 /* MainView.swift */; };
 		84CAD9F12A4C300A00DDAB67 /* SwiftUIPerfomanceTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CAD9F02A4C300A00DDAB67 /* SwiftUIPerfomanceTestApp.swift */; };
 		84CAD9F52A4C300B00DDAB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CAD9F42A4C300B00DDAB67 /* Assets.xcassets */; };
 		84CAD9F82A4C300B00DDAB67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CAD9F72A4C300B00DDAB67 /* Preview Assets.xcassets */; };
@@ -21,6 +24,9 @@
 		845863762A4C30DC00C0C571 /* Donut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donut.swift; sourceTree = "<group>"; };
 		845863782A4C321300C0C571 /* DonutMenuObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutMenuObservableObject.swift; sourceTree = "<group>"; };
 		8458637A2A4C323C00C0C571 /* DonutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutView.swift; sourceTree = "<group>"; };
+		8458637C2A4C4F4800C0C571 /* DonutMenuSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutMenuSimple.swift; sourceTree = "<group>"; };
+		8458637E2A4C4F6300C0C571 /* TestText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestText.swift; sourceTree = "<group>"; };
+		845863802A4C4FAE00C0C571 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		84CAD9ED2A4C300A00DDAB67 /* SwiftUIPerfomanceTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPerfomanceTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CAD9F02A4C300A00DDAB67 /* SwiftUIPerfomanceTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPerfomanceTestApp.swift; sourceTree = "<group>"; };
 		84CAD9F42A4C300B00DDAB67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 			children = (
 				845863782A4C321300C0C571 /* DonutMenuObservableObject.swift */,
 				8458637A2A4C323C00C0C571 /* DonutView.swift */,
+				8458637C2A4C4F4800C0C571 /* DonutMenuSimple.swift */,
+				8458637E2A4C4F6300C0C571 /* TestText.swift */,
+				845863802A4C4FAE00C0C571 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,10 +188,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				845863772A4C30DC00C0C571 /* Donut.swift in Sources */,
+				845863812A4C4FAE00C0C571 /* MainView.swift in Sources */,
 				845863792A4C321300C0C571 /* DonutMenuObservableObject.swift in Sources */,
 				845863752A4C30BA00C0C571 /* Helpers.swift in Sources */,
 				8458637B2A4C323C00C0C571 /* DonutView.swift in Sources */,
 				84CAD9F12A4C300A00DDAB67 /* SwiftUIPerfomanceTestApp.swift in Sources */,
+				8458637D2A4C4F4800C0C571 /* DonutMenuSimple.swift in Sources */,
+				8458637F2A4C4F6300C0C571 /* TestText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

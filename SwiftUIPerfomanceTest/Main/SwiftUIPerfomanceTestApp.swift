@@ -11,14 +11,7 @@ import SwiftUI
 struct SwiftUIPerfomanceTestApp: App {
     var body: some Scene {
         WindowGroup {
-            VStack {
-                Spacer().frame(width: 30, height: 40)
-
-                DonutMenuObservableObject()
-                    .padding()
-            }
-            .background(.debug)
-
+            MainView()
         }
     }
 }

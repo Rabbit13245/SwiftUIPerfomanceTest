@@ -7,43 +7,63 @@
 
 import SwiftUI
 
-struct TestText: View {
-    let text: String
-
-    var body: some View {
-        Text(text)
-            .background(.debug)
-    }
-}
 struct DonutMenuObservableObject: View {
     @StateObject var model = FoodTruckModelObservableObject()
 
     var body: some View {
         let _ = Self._printChanges()
-        VStack {
-            List {
-                Section("Пончики") {
-                    ForEach(model.donuts) { donut in
-                        DonutView(donut: donut)
-                    }
-                    Button("Добавить новый пончик") {
-                        model.addDonut()
-                    }
-                    Button("Повысить цены") {
-                        model.increasePrice()
-                    }
-                    Button("Повысить цену клубничного") {
-                        model.increasePriceStrawberry()
-                    }
-                }
+        VStack(spacing: 16) {
+            DonutView(donut: model.donuts[0])
 
-                TestText(text: "Some text")
+            DonutView(donut: model.donuts[1])
 
-                localView
-                    .padding()
-                    .background(.debug)
+            DonutView(donut: model.donuts[2])
+
+            Button("Повысить цены") {
+                model.increasePrice()
             }
-            .listStyle(.plain)
+            .background(.debug)
+
+            Button("Повысить цену клубничного") {
+                model.increasePriceStrawberry()
+            }
+            .background(.debug)
+
+            TestText(text: "Some text")
+
+            localView
+                .padding()
+                .background(.debug)
+
+//            List {
+//                Section("Пончики") {
+//                    ForEach(model.donuts) { donut in
+//                        DonutView(donut: donut)
+//                    }
+//
+//                    Button("Добавить новый пончик") {
+//                        model.addDonut()
+//                    }
+//                    .background(.debug)
+//
+//                    Button("Повысить цены") {
+//                        model.increasePrice()
+//                    }
+//                    .background(.debug)
+//
+//                    Button("Повысить цену клубничного") {
+//                        model.increasePriceStrawberry()
+//                    }
+//                    .background(.debug)
+//                }
+//
+//                TestText(text: "Some text")
+//
+//                localView
+//                    .padding()
+//                    .background(.debug)
+//            }
+//            .listStyle(.plain)
         }
         .background(.debug)
     }
